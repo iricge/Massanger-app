@@ -1,13 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat Here</title>
-  <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
-</head>
-<body>
-  <script src="../node_modules/aos/dist/aos.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chat Here</title>
+        <!-- ! ------------------------------ Css Style ------------------------------ ! -->
+        <link rel="stylesheet" href="styles/style.css" />
+        <!-- ! ------------------------------ Favicon ------------------------------ ! -->
+        <link rel="shortcut icon" type="image/jpg" href="resource/images/favicon/favicon.png" />
+        <link href="assest/resource/images/favicon/Braingame-Favicon.png" rel="shortcut icon" />
+        <!-- ! ------------------------------ Google Font ------------------------------ ! -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <!-- ! ------------------------------ Libraries ------------------------------ ! -->
+        <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
+    </head>
+    <div class="container">
+        <body>
+            <!-- ! ------------------------------ Header ------------------------------ ! -->
+            <header class="header">
+                <div class="header-wrapper">
+                    <div class="userprofile">
+                        <div class="userprofile-picture">
+                            <img src="" alt="user profile picture" />
+                        </div>
+                        <div class="userprofile-info">
+                            <h2 class="username-display">Iric Gorgi</h2>
+                        </div>
+                    </div>
+                    <div class="chat-options">
+                        <div class="chatoptions-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ! ------------------------------ Main ------------------------------ ! -->
+            <main class="main">
+                <div class="main-wrapper">
+                    <section class="contact-section">
+                        <div class="contact-section-search">
+                            <input type="search" placeholder="Search or start a new chat" />
+                        </div>
+                        <ul class="contact-container">
+                            <li>iric</li>
+                        </ul>
+                    </section>
+                    <section class="chat-section">
+                        <div class="chat-section-header">
+                            <div class="chatsec-contact-info">
+                                <img
+                                    src=""
+                                    alt="the Contact profile"
+                                    class="chatheader-contactprofile"
+                                />
+                                <h3 class="chatheader-contactname"></h3>
+                                <p class="chatheader-contactdetails"></p>
+                            </div>
+                            <div class="chatheader-options">
+                                <div class="chatheader-search">
+                                    <input
+                                        type="search"
+                                        name="chatheader-searchbox"
+                                        class="chatheader-searchinput"
+                                        placeholder="Your desire massage in chat"
+                                    />
+                                    <ul class="chatheader-option-container">
+                                        <li class="chatoptions-contact-info"></li>
+                                        <li class="chatoptions-clearmassages"></li>
+                                        <li class="chatoptions-muteorunmute"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="chat-container">
+                            <li>iric in chat</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+            <!-- ! ------------------------------ Footer ------------------------------ ! -->
+            <footer class="footer">
+                <div class="footer-wrapper">
+                    <div class="user-batterinfo">
+                        <h2>
+                            <i class="fa-solid fa-battery-full"></i
+                            ><span class="batteryinfo-percentage">10%</span>
+                        </h2>
+                    </div>
+                    <div class="authorsocial-informations">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="user-onlinestate"></div>
+                </div>
+            </footer>
+            <!-- ! ------------------------------ Scripts ------------------------------ ! -->
+            <script type="module" src="scripts/index.js"></script>
+            <!-- ! ------------------------------ library Scripts ------------------------------ ! -->
+            <script src="../node_modules/aos/dist/aos.js"></script>
+            <script
+                src="https://kit.fontawesome.com/9c345a79fa.js"
+                crossorigin="anonymous"
+            ></script>
+            <!-- <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script>
+      const btn = document.querySelector("#btn");
+      Popper.createPopper(btn, ()=>{
+        placement: 'top';
+      })
+    </script> -->
+        </body>
+    </div>
 </html>
