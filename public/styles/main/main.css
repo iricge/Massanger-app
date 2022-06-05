@@ -1,8 +1,11 @@
+@import url(contact-section/contact.css);
+@import url(chat.css);
+@import url(chatheader.css);
 .main {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 90vh;
+    height: 94vh;
     background-color: #f0f;
 }
 .main-wrapper {
@@ -14,14 +17,3 @@
     /* border: 1px solid #000; */
 }
 /* ! -------------------------------- Main container -------------------------------- ! */
-.contact-section {
-    width: 30%;
-    height: 100%;
-    border: 1px solid #000;
-}
-.chat-section {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #3d0;
-}
-/* ! -------------------------------- Main componenets -------------------------------- ! */

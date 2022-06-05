@@ -1,0 +1,28 @@
+.contact-section {
+    width: 25%;
+    height: 100%;
+    border: 1px solid #000;
+}
+.contact-container {
+    height: 96%;
+    overflow-y: auto;
+}
+.contact-section-search {
+    width: 100%;
+    height: 4%;
+    padding: 5px;
+    border: 1px solid #000;
+}
+.contact-search-input {
+    width: 100%;
+}
+.contact-infocontainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+}
+.contact-profilepicture {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}

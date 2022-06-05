@@ -2,9 +2,10 @@
 @import url(footer/footer.css);
 @import url(header/header.css);
 @import url(main/main.css);
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* ! -------------------------------- Variables -------------------------------- ! */
-:root {}
+/* :root {
+} */
 /* ! -------------------------------- Containers -------------------------------- ! */
 .container {
     display: flex;
@@ -16,10 +17,10 @@
     min-height: 100vh;
 }
 .wrapper {
-  width: 75%;
-  max-width: 75vw;
-  display: flex;
-  border: 1px solid #000;
+    width: 75%;
+    max-width: 75vw;
+    display: flex;
+    border: 1px solid #000;
 }
 /* .item-wrapper {
   display: flex;
@@ -29,26 +30,29 @@
   position: relative;
 } */
 /* ! -------------------------------- Custom Scrollbar -------------------------------- ! */
-  /* Firefox */
-  * {
+* {
     scrollbar-width: 10px;
     scrollbar-color: #2e2e2e #ffffff;
-  }
-  *::-webkit-scrollbar {
+}
+*::-webkit-scrollbar {
     width: 10px;
-  }
-  *::-webkit-scrollbar-track {
+}
+*::-webkit-scrollbar-track {
     background: #424242;
-  }
-  *::-webkit-scrollbar-thumb {
+}
+*::-webkit-scrollbar-thumb {
     background-color: #2e2e2e;
     border-radius: 5px;
-  }
+}
 /* ! -------------------------------- Rester -------------------------------- ! */
 *,
 *::before,
-*::after {box-sizing: border-box;}
-*::selection {background: var(--selection-color);}
+*::after {
+    box-sizing: border-box;
+}
+/* *::selection {
+    background: var(--selection-color);
+} */
 * {
     margin: 0;
     padding: 0;
@@ -58,10 +62,12 @@
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
     scrollbar-width: thin;
-    user-select: none;
+    /* user-select: none; */
 }
 html,
-body {width: 100%;}
+body {
+    width: 100%;
+}
 body,
 h1,
 h2,
@@ -71,16 +77,24 @@ p,
 figure,
 blockquote,
 dl,
-dd {margin: 0;}
+dd {
+    margin: 0;
+}
 ul[role="list"],
-ol[role="list"] {list-style: none;}
-html:focus-within {scroll-behavior: smooth;}
+ol[role="list"] {
+    list-style: none;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     width: 100%;
 }
-a:not([class]) {text-decoration-skip-ink: auto;}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
 img,
 picture {
     max-width: 100%;
@@ -89,7 +103,9 @@ picture {
 input,
 button,
 textarea,
-select {font: inherit;}
+select {
+    font: inherit;
+}
 @media (prefers-reduced-motion: reduce) {
     html:focus-within {
         scroll-behavior: auto;
@@ -103,47 +119,125 @@ select {font: inherit;}
         scroll-behavior: auto !important;
     }
 }
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	box-sizing: border-box;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
-body {
-	line-height: 1;
+ol,
+ul {
+    list-style: none;
 }
-ol, ul {
-	list-style: none;
+blockquote,
+q {
+    quotes: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
