@@ -4,7 +4,7 @@ This project is one the first stages im trying my best to improve it and add mor
 
 ### Technology that was used
 
-HTML , puser CSS , pure JavaScript (Firebase , TypeScript coming soon)
+HTML , pure CSS , pure JavaScript (Firebase , TypeScript coming soon)
 
 ## licence & copyright
 
