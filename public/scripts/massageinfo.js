@@ -19,3 +19,8 @@ export function _uuid() {
       return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
   });
 }
+//! ------------------------------------- Check for user internet status and shows it on DOM ------------------------------------- !\\
+export function userOnlineStateDisplay(){
+  let userOnlineStatus = navigator.onLine
+  userOnlineStatus ? userOnlineStatusElement.style.backgroundColor = "#00ff0d" : userOnlineStatusElement.style.backgorundColor = "#ff0000";
+}
