@@ -8,6 +8,10 @@ const massageSubmitBtn = $.querySelector(".chat-massage-submit");
 const massageContainer = $.querySelector(".chat-massage-container");
 const massageForm = $.querySelector(".chat-massage-form");
 
+function massageObj(){}
+
+
+
 massageForm.addEventListener("click", (e)=>{
   e.preventDefault();
 })
