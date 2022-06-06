@@ -24,3 +24,12 @@ export function userOnlineStateDisplay(){
   let userOnlineStatus = navigator.onLine
   userOnlineStatus ? userOnlineStatusElement.style.backgroundColor = "#00ff0d" : userOnlineStatusElement.style.backgorundColor = "#ff0000";
 }
+//! ---------------------- Gets users battery percentage and gives to a function that updates the DOM ---------------------- !\\
+export function updateBatteryDiplay() {
+  navigator.getBattery()
+  .then(battery =>{
+    let userBatteryPercentage = battery.level * 100
+    userBatteryLevelDisplay.innerHTML = `${userBatteryPercentage}%`
+    console.log(userBatteryPercentage);
+  })
+}
