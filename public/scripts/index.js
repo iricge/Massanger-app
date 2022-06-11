@@ -23,4 +23,21 @@ window.addEventListener("keypress", (e)=>{
 window.addEventListener("load", ()=>{
   userOnlineStateDisplay()
   updateBatteryDiplay()
+//! ------------------- IndexedDB for photos and other stuff ------------------- !\\
+  let DBOpenReq = indexedDB.open("userTest", 1)
+
+  DBOpenReq.addEventListener("error", (err)=>{
+    alert(`indexedDB failed : ${err} please Refresh`)
+    console.log(err);
+  })
+
+  DBOpenReq.addEventListener("success", (e)=>{
+    console.log(e);
+  })
+
+  DBOpenReq.addEventListener("upgradeneeded", (e)=>{
+    console.log(e);
+    console.log(e.oldVersion);
+    console.log(e.newVersion);
+  })
 })
