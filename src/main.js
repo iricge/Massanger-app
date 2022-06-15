@@ -1,2 +1,2 @@
 import './style.css'
-import * as indexJS from "./scripts/index.js"
+import * as indexJS from "./scripts/massagegenrator"

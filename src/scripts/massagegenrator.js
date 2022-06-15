@@ -2,34 +2,49 @@
 
 import { dateAtTheMomment , userOnlineStateDisplay , _uuid , updateBatteryDiplay } from "./massageinfo.js"
 
+//! ------------------- Html Components ------------------- !\\
+
 let $ = document;
 const massageInput = $.querySelector(".chat-massage-input");
 const massageSubmitBtn = $.querySelector(".chat-massage-submit");
 const massageContainer = $.querySelector(".chat-massage-container");
 const massageForm = $.querySelector(".chat-massage-form");
-let massageArray = [];
+//! ------------------- Javascript data ------------------- !\\
 
-function massageObj(contactName, contactId){
-  let contactThatIsChating_name = contactName 
-  let contactThatIsChating_id = contactId 
-  let massageuuid = _uuid()
+let contactArray = [];
+let contactThatIsChating_name;
+let contactThatIsChating_id;
 
-  let massage = {
-    "massageContent": massage.value,
-    "massageid": _uuid(),
-    
+function contactGenerator(contactName, contactId, content){
+  contactThatIsChating_name = contactName 
+  contactThatIsChating_id = contactId 
+
+  let contactInfo = {
+    "contact_username": contactThatIsChating_name,
+    "contact_id": contactThatIsChating_id,
+    "contact_massages": [
+      {
+        "massage_content": content,
+        "massage_date": dateAtTheMomment()
+      },
+      
+    ]
   }
-  // let contactAndMassageArr = {
-  //   "contact": contactThatIsChating_name,
-  //   "contact_id": contactThatIsChating_id,
-  //   "contact_massages": {
-  //     [massageuuid]: {
-  //       "massageContent": massageInput.value,
-
-  //     }
-  //   }
-  // }
+  contactArray.push(contactInfo)
 }
+
+
+contactGenerator("iric", _uuid(), "Hello iric1")
+contactGenerator("alex", _uuid(), "Hello iric2")
+contactGenerator("sepi", _uuid(), "Hello iric3")
+contactGenerator("hosi", _uuid(), "Hello iric4")
+
+console.log(contactArray[0].contact_username);
+console.log(contactArray[1].contact_massages[0].massage_content);
+console.log(contactArray);
+
+
+function massageGenerator(){}
 massageForm.addEventListener("click", (e)=>{
   e.preventDefault();
 })
@@ -42,20 +57,16 @@ window.addEventListener("load", ()=>{
   userOnlineStateDisplay()
   updateBatteryDiplay()
 //! ------------------- IndexedDB for photos and other stuff ------------------- !\\
+
   let DBOpenReq = indexedDB.open("userTest", 1)
 
   DBOpenReq.addEventListener("error", (err)=>{
     alert(`indexedDB failed : ${err} please Refresh`)
-    console.log(err);
   })
 
   DBOpenReq.addEventListener("success", (e)=>{
-    console.log(e);
   })
 
   DBOpenReq.addEventListener("upgradeneeded", (e)=>{
-    console.log(e);
-    console.log(e.oldVersion);
-    console.log(e.newVersion);
   })
 })
