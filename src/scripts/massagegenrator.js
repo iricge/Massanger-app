@@ -15,6 +15,12 @@ let contactArray = [];
 let contactThatIsChating_name;
 let contactThatIsChating_id;
 
+let obj = {
+  "userMassage_content": content,
+  "userMassage_date": dateAtTheMomment(),
+  "hasContact_Seen": false,
+}
+
 function contactGenerator(contactName, contactId, content){
   contactThatIsChating_name = contactName 
   contactThatIsChating_id = contactId 
@@ -45,10 +51,10 @@ contactGenerator("iric", _uuid(), "Hello iric1")
 contactGenerator("alex", _uuid(), "Hello iric2")
 contactGenerator("sepi", _uuid(), "Hello iric3")
 contactGenerator("hosi", _uuid(), "Hello iric4")
+contactArray[0].contact_massages[0].push(obj)
 
-console.log(contactArray[0].contact_username);
 console.log(contactArray[1].contact_massages[0].massage_content);
-console.log(contactArray);
+console.log(contactArray[1].contact_massages[0]);
 
 
 function massageGenerator(){}
