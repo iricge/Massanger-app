@@ -25,9 +25,16 @@ function contactGenerator(contactName, contactId, content){
     "contact_massages": [
       {
         "massage_content": content,
-        "massage_date": dateAtTheMomment()
+        "massage_date": dateAtTheMomment(),
+        "hasUser_Seen": false
       },
-      
+     ],
+    "user_massages": [
+      {
+        "userMassage_content": content,
+        "userMassage_date": dateAtTheMomment(),
+        "hasContact_Seen": false,
+      }
     ]
   }
   contactArray.push(contactInfo)
