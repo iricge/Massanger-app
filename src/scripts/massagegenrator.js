@@ -44,6 +44,7 @@ function contactGenerator(contactName){
   contactLocalStorageSave(contactArray)
 }
 contactGenerator("iric")
+
 function contactLocalStorageSave(data){
   localStorage.setItem("contact_obj", JSON.stringify(data))
 }
@@ -56,13 +57,16 @@ function contactDOMCreator(){
   });
   console.log("the elements are done");
   let contactInfoDom = $?.querySelectorAll(".contact-infocontainer")
-  console.log(contactInfoDom);
-  return contactInfoDom
+  contactIdGetter(contactInfoDom)
 }
-function contactIdGetter(id) {
-   
+function contactIdGetter(element) {
+  console.log(element[0].dataset.contact_id);
 }
+
 function massageGenerator(){}
+
+//! ------------------- Events ------------------- !\\
+
 massageForm.addEventListener("click", (e)=>{
   e.preventDefault();
 })
