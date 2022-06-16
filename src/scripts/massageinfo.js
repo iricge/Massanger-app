@@ -30,6 +30,5 @@ export function updateBatteryDiplay() {
   .then(battery =>{
     let userBatteryPercentage = battery.level * 100
     userBatteryLevelDisplay.innerHTML = `${userBatteryPercentage}%`
-    console.log(userBatteryPercentage);
   })
 }
