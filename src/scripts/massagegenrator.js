@@ -5,11 +5,8 @@ import { dateAtTheMomment , userOnlineStateDisplay , _uuid , updateBatteryDiplay
 //! ------------------- Html Components ------------------- !\\
 
 let $ = document;
-const massageInput = $.querySelector(".chat-massage-input");
-const massageSubmitBtn = $.querySelector(".chat-massage-submit");
-const massageContainer = $.querySelector(".chat-massage-container");
-const massageForm = $.querySelector(".chat-massage-form");
 let contactContainer = $.querySelector(".contact-container");
+let contactInfoDom;
 //! ------------------- Javascript data ------------------- !\\
 
 let contactArray = [];
@@ -36,7 +33,8 @@ function contactGenerator(contactName){
   let contactInfo = {
     "contact_username": contactThatIsChating_name,
     "contact_id": _uuid(),
-    "contact_profilepicture": "Nothing",
+    "contact_profilepicture": "",
+    "contact_lastMassage": "",
     "contact_massages": [],
     "user_massages": []
   }
@@ -50,13 +48,12 @@ function contactLocalStorageSave(data){
 }
 
 function contactDOMCreator(){
-  let amountofContactStr = JSON.parse(localStorage.getItem("contact_obj"))
-  amountofContactStr.forEach(element => {
+  let contactObjInfo = JSON.parse(localStorage.getItem("contact_obj"))
+  contactObjInfo.forEach(element => {
     contactContainer.insertAdjacentHTML("beforeend", ` 
-    <li class="contact-infocontainer" data-contact_id= ${element.contact_id}><img src="assets/images/thumbnails/image.jpg"alt="contact profile picture"class="contact-profilepicture"/><h3 class="contact-username">${element.contact_username}</h3></li>`)
+    <li class="contact-infocontainer" data-contact_id= ${element.contact_id})"><img src="assets/images/thumbnails/image.jpg"alt="contact profile picture"class="contact-profilepicture"/><h3 class="contact-username">${element.contact_username}</h3></li>`)
   });
-  console.log("the elements are done");
-  let contactInfoDom = $?.querySelectorAll(".contact-infocontainer")
+  contactInfoDom = $?.querySelectorAll(".contact-infocontainer")
   contactIdGetter(contactInfoDom)
 }
 function contactIdGetter(element) {
@@ -66,15 +63,12 @@ function contactIdGetter(element) {
 function massageGenerator(){}
 
 //! ------------------- Events ------------------- !\\
-
-massageForm.addEventListener("click", (e)=>{
-  e.preventDefault();
-})
 window.addEventListener("keypress", (e)=>{
   if (e.key === "enter"){
     newMassageGenerator()
   }
 })
+
 window.addEventListener("load", ()=>{
   userOnlineStateDisplay()
   updateBatteryDiplay()

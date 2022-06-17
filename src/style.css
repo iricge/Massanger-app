@@ -2,8 +2,17 @@
 @import url(./styles/main/main.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* ! -------------------------------- Variables -------------------------------- ! */
-/* :root {
-} */
+:root {
+    /* 
+    #202C33 chat and contact header bgc
+    #111B21 contact section search bar and contact backgournd 
+    #E9EDEF contact user name color
+    #8696A0 contact last massage and date and icons color
+    #AEBAC1 contact section header icon colors
+    #233138 contact section header drop donw bgc
+    #182229 contact sectino header dropdown hover
+    */
+}
 /* ! -------------------------------- Containers -------------------------------- ! */
 .container {
     display: flex;
@@ -14,12 +23,12 @@
     width: 100vw;
     min-height: 100vh;
 }
-.wrapper {
-    width: 75%;
+/* .wrapper {
+    width: 80%;
     max-width: 75vw;
     display: flex;
     border: 1px solid #000;
-}
+} */
 /* .item-wrapper {
   display: flex;
   flex-direction: column;

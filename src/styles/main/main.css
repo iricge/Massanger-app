@@ -10,8 +10,8 @@
     scrollbar-width: 0;
 }
 .main-wrapper {
-    width: 75%;
-    max-width: 75vw;
+    width: 80%;
+    max-width: 80vw;
     display: flex;
     /* justify-content: space-around; */
     align-items: center;
