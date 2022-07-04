@@ -23,27 +23,36 @@
             <!-- ! ------------------------------ Main ------------------------------ ! -->
             <main class="main">
                 <div class="main-wrapper">
+                    <!-- ! ------------------------------ Contact section container ------------------------------ ! -->
                     <section class="contact-section">
+                        <!-- -------------------- Contact Inforamation -------------------->
                         <div class="contact-section-header">
                             <div class="contact-section-userinfo">
-                                <img
-                                    class="contact-header-userprofilepicture"
-                                    src="assets/images/logo/chad.jpg"
-                                    alt="user profile picture"
-                                />
-                                <h2 class="contact-header-username-display">Iric Gorgi</h2>
-                                <div class="user-batterinfo">
-                                    <h2>
-                                        <i class="fa-solid fa-battery-full user-batteryicon"></i
-                                        ><span class="batteryinfo-percentage">10%</span>
+                                <div class="username-profile">
+                                    <picture>
+                                        <img
+                                            class="contact-header-userprofilepicture"
+                                            src="assets/images/logo/chad.jpg"
+                                            alt="user profile picture"
+                                        />
+                                    </picture>
+                                    <h2 class="contact-header-username-display" title="Username">
+                                        Your username
                                     </h2>
                                 </div>
-                                <div class="authorsocial-informations">
-                                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                                    <a href=""><i class="fa-brands fa-github"></i></a>
+                                <div class="contact-header-options">
+                                    <button class="new-contact-button">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                    </button>
+                                    <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                    <!-- <ul class="contact-header-dropdownmenu">
+                                        <li class="contact-headerbtn">Starred massages</li>
+                                        <li class="contact-headerbtn">Settings</li>
+                                        <li class="contact-headerbtn">Log out</li>
+                                    </ul> -->
                                 </div>
-                                <div class="user-onlinestate"></div>
                             </div>
+                            <!-- -------------------- Contact Search bar -------------------->
                             <div class="contact-search-newcontact">
                                 <form class="contact-searchform">
                                     <input
@@ -52,11 +61,12 @@
                                         class="contact-search-input"
                                     />
                                 </form>
-                                <button class="new-contact-button">new contact</button>
                             </div>
                         </div>
-                        <!-- <ul class="contact-container"></ul> -->
+                        <!-- -------------------- Contact Holder -------------------->
+                        <ul class="contact-container"></ul>
                     </section>
+                    <!-- ! ------------------------------ Chat section container ------------------------------ ! -->
                     <section class="chat-section">
                         <div class="chat-section-header">
                             <div class="chatsec-contact-info">

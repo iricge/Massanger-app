@@ -55,6 +55,7 @@ function contactDOMCreator(){
   });
   contactInfoDom = $?.querySelectorAll(".contact-infocontainer")
   contactIdGetter(contactInfoDom)
+  return contactInfoDom
 }
 function contactIdGetter(element) {
   console.log(element[0].dataset.contact_id);
