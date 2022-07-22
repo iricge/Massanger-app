@@ -23,35 +23,38 @@
             <!-- ! ------------------------------ Main ------------------------------ ! -->
             <main class="main">
                 <div class="main-wrapper">
+                    <!-- ! ------------------------------ Option bar ------------------------------ ! -->
+                    <section class="options-folder-bar">
+                        <button class="settings-btn option-bar-box">
+                            <i class="fa-solid fa-align-left"></i>
+                        </button>
+                        <ul class="folder-container">
+                            <li class="optionbar-allchat option-bar-box">
+                                <i class="fa-solid fa-comments"></i>
+                                <h3 class="folder-name">all chat</h3>
+                            </li>
+                            <li class="option-bar-box">
+                                <i class="fa-solid fa-folder"></i>
+                                <h3 class="folder-name">personal</h3>
+                            </li>
+                            <li class="option-bar-box">
+                                <i class="fa-solid fa-folder"></i>
+                                <h3 class="folder-name">Sample</h3>
+                            </li>
+                            <li class="optionbar-unread option-bar-box">
+                                <i class="fa-solid fa-comment"></i>
+                                <h3 class="folder-name">Unread</h3>
+                            </li>
+                            <li class="optionbar-edit option-bar-box">
+                                <i class="fa-solid fa-sliders"></i>
+                                <h3 class="folder-name">edit</h3>
+                            </li>
+                        </ul>
+                    </section>
                     <!-- ! ------------------------------ Contact section container ------------------------------ ! -->
                     <section class="contact-section">
                         <!-- -------------------- Contact Inforamation -------------------->
                         <div class="contact-section-header">
-                            <div class="contact-section-userinfo">
-                                <div class="username-profile">
-                                    <picture>
-                                        <img
-                                            class="contact-header-userprofilepicture"
-                                            src="assets/images/logo/chad.jpg"
-                                            alt="user profile picture"
-                                        />
-                                    </picture>
-                                    <h2 class="contact-header-username-display" title="Username">
-                                        Your username
-                                    </h2>
-                                </div>
-                                <div class="contact-header-options">
-                                    <button class="new-contact-button">
-                                        <i class="fa-solid fa-user-plus"></i>
-                                    </button>
-                                    <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
-                                    <!-- <ul class="contact-header-dropdownmenu">
-                                        <li class="contact-headerbtn">Starred massages</li>
-                                        <li class="contact-headerbtn">Settings</li>
-                                        <li class="contact-headerbtn">Log out</li>
-                                    </ul> -->
-                                </div>
-                            </div>
                             <!-- -------------------- Contact Search bar -------------------->
                             <div class="contact-search-newcontact">
                                 <form class="contact-searchform">
@@ -64,7 +67,80 @@
                             </div>
                         </div>
                         <!-- -------------------- Contact Holder -------------------->
-                        <ul class="contact-container"></ul>
+                        <ul class="contact-container">
+                            <li class="contact-infocontainer">
+                                <img
+                                    loading="lazy"
+                                    src="assets/images/thumbnails/image.jpg"
+                                    alt="contact profile picture"
+                                    class="contact-profilepicture"
+                                />
+                                <div class="contact-username-lastmassage">
+                                    <h3 class="contact-username">iric gorgi</h3>
+                                    <p class="contact-lastmassage">Hello my freind how are you ?</p>
+                                </div>
+                                <div class="contact-date-notification">
+                                    <p class="lastmassage-datedisplay">4:20</p>
+                                    <div class="contact-notification-counter">
+                                        <span class="contact-notification-volume">3</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contact-infocontainer">
+                                <img
+                                    loading="lazy"
+                                    src="assets/images/thumbnails/image.jpg"
+                                    alt="contact profile picture"
+                                    class="contact-profilepicture"
+                                />
+                                <div class="contact-username-lastmassage">
+                                    <h3 class="contact-username">iric gorgi</h3>
+                                    <p class="contact-lastmassage">Hello my freind how are you ?</p>
+                                </div>
+                                <div class="contact-date-notification">
+                                    <p class="lastmassage-datedisplay">4:20</p>
+                                    <div class="contact-notification-counter">
+                                        <span class="contact-notification-volume">3</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contact-infocontainer">
+                                <img
+                                    loading="lazy"
+                                    src="assets/images/thumbnails/image.jpg"
+                                    alt="contact profile picture"
+                                    class="contact-profilepicture"
+                                />
+                                <div class="contact-username-lastmassage">
+                                    <h3 class="contact-username">iric gorgi</h3>
+                                    <p class="contact-lastmassage">Hello my freind how are you ?</p>
+                                </div>
+                                <div class="contact-date-notification">
+                                    <p class="lastmassage-datedisplay">4:20</p>
+                                    <div class="contact-notification-counter">
+                                        <span class="contact-notification-volume">33333333</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contact-infocontainer">
+                                <img
+                                    loading="lazy"
+                                    src="assets/images/thumbnails/image.jpg"
+                                    alt="contact profile picture"
+                                    class="contact-profilepicture"
+                                />
+                                <div class="contact-username-lastmassage">
+                                    <h3 class="contact-username">iric gorgi</h3>
+                                    <p class="contact-lastmassage">Hello my freind how are you ?</p>
+                                </div>
+                                <div class="contact-date-notification">
+                                    <p class="lastmassage-datedisplay">4:20</p>
+                                    <div class="contact-notification-counter">
+                                        <span class="contact-notification-volume">3</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </section>
                     <!-- ! ------------------------------ Chat section container ------------------------------ ! -->
                     <section class="chat-section">
@@ -74,7 +150,6 @@
                                     src="assets/images/thumbnails/image.jpg"
                                     alt="the Contact profile"
                                     class="chatheader-contactprofile"
-                                />
                                 />
                                 <h3 class="chatheader-contactname">iric</h3>
                                 <p class="chatheader-contactdetails">long ago</p>

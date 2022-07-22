@@ -1,6 +1,8 @@
 /* ! -------------------------------- Modules -------------------------------- ! */
-@import url(./styles/main/main.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url(./styles/contact-section/contact.css);
+@import url(./styles/chat.css);
+@import url(./styles/option-bar.css);
 /* ! -------------------------------- Variables -------------------------------- ! */
 :root {
     /* 
@@ -14,11 +16,24 @@
     */
 }
 /* ! -------------------------------- Containers -------------------------------- ! */
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(31, 31, 31);
+    scrollbar-width: 0;
+}
+.main-wrapper {
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    /* align-items: center; */
+}
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     flex-wrap: wrap;
     width: 100vw;
     min-height: 100vh;
