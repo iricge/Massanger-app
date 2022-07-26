@@ -1,0 +1,35 @@
+.options-folder-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 7%;
+    border: 1px solid #000;
+}
+.folder-container {
+    width: 100%;
+}
+.settings-btn {
+    height: 50px !important;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.option-bar-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.option-bar-box:hover {
+    background-color: black;
+}
+.option-bar-box i {
+    font-size: 25px;
+}
+.option-bar-box h3 {
+    font-size: 0.9rem;
+}

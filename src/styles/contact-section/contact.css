@@ -1,0 +1,87 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.contact-section-header {
+    display: flex;
+    flex-direction: column;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+/* ! -------------------------------- Contact Seaction header -------------------------------- ! */
+.contact-search-newcontact {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.contact-searchform {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.contact-search-input {
+    width: 93%;
+    padding: 5px 0 5px 3px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+/* ! -------------------------------- Contact info container-------------------------------- ! */
+.contact-infocontainer {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    /* border: 1px solid #f0f; */
+}
+.contact-profilepicture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.contact-username-lastmassage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 90%;
+    height: 100%;
+    padding: 0 0 0 8px;
+    /* border: 1px solid #ff0; */
+}
+.contact-username {
+    color: aliceblue;
+    font: 1.3rem;
+}
+.contact-lastmassage {
+    color: aliceblue;
+}
+.contact-date-notification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 9%;
+    height: 100%;
+    z-index: 9;
+    /* border: 1px solid #000; */
+}
+.lastmassage-datedisplay {
+    color: #fff;
+}
+.contact-notification-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: max-content;
+    height: 40%;
+    border-radius: 100vmax;
+    z-index: 10;
+}
